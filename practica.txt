@@ -1,0 +1,17 @@
+fun main() {
+    val valor1 = 10
+    val valor2 = 20
+    
+    val operacion = '+'
+    
+    val resultado = when(operacion){ 
+    '+' -> valor1 + valor2
+    '-' -> valor1 - valor2
+    '/' -> valor1 / valor2
+    '*' -> valor1 * valor2
+    else -> println("ingrese otra operacion")
+    }
+    
+    
+    println("Resultado: $resultado")
+}
