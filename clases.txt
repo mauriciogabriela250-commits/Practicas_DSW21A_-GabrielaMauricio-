@@ -1,0 +1,23 @@
+data class Direccion( 
+val departamento: String,
+val municipio: String,
+val distrito: String,
+val complementos: String
+)
+
+data class Estudiantes( 
+val id: Int,
+val nombre: String,
+val materia: String,
+val edad: Int,
+val direccion: Direccion
+)
+
+fun main() {
+    val student = Estudiantes(
+        1, "Melvin", "Software",  18,
+        Direccion("La Paz", "La Paz Este", "Zacatecoluca", "Itca")
+        
+        )
+    println(student)
+}
